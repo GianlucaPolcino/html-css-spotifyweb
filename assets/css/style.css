@@ -26,8 +26,7 @@ header{
     right: 0;
     height: 70px;
     width: calc(100% - 200px);
-    background-color: #141922;
-    filter: opacity(0.8);
+    background-color: rgba(3.1, 4.3, 7.1, 0.3);
 }
 
 main{
@@ -48,18 +47,19 @@ footer{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 12px;
 }
 
-main div{
-    display: flex;
-    align-items: center;
+.upgrade-button button{
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: #080b12;
+    border: 1px solid white;
     
 }
 
-main div .p{
-    margin-top: 100px;
-}
 
-.prova{
-    height: 70px;
-}
