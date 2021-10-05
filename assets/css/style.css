@@ -3,3 +3,63 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+aside{
+    float: left;
+    height: calc(100vh - 70px);
+    width: 200px;
+    background-color: black;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    height: 70px;
+    width: calc(100% - 200px);
+    background-color: #141922;
+    filter: opacity(0.8);
+}
+
+main{
+    float: right;
+    height: calc(100vh - 70px);
+    width: calc(100% - 200px);
+    overflow: auto;
+    background-color: #141922;
+    color: white;
+}
+
+footer{
+    height: 70px;
+    background-color: #282828;
+}
+
+.upgrade-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main div{
+    display: flex;
+    align-items: center;
+    
+}
+
+main div .p{
+    margin-top: 100px;
+}
+
+.prova{
+    height: 70px;
+}
