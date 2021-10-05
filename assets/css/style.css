@@ -39,8 +39,16 @@ main{
 }
 
 footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 70px;
+    padding: 0 10px;
     background-color: #282828;
+    }
+
+ul{
+    list-style: none;
 }
 
 .upgrade-button{
@@ -60,6 +68,130 @@ footer{
     background-color: #080b12;
     border: 1px solid white;
     
+}
+
+.logo{
+    width: 140px;
+    padding: 14px 5px;
+}
+
+.stations{
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #707070;
+
+}
+
+.stations li{
+    margin-bottom: 6px;
+}
+
+.stations li svg{
+    width: 22px;
+    vertical-align: middle;
+    margin-right: 8px;
+    color: #707070;
+}
+
+.playlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 16px;
+    min-height: 62vh;
+    overflow: auto;
+    color: white;
+}
+
+.playlist-top{
+    font-weight: bold;
+    font-size: 14px;
+    color: #707070;
+}
+
+.fa-plus-square{
+    font-size: 30px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.playlist-top ul li{
+    line-height: 40px;
+}
+
+.playlist-top h4{
+    color: white;
+    margin-bottom: 8px;
+}
+
+.new-playlist{
+    font-size: 12px;
+}
+
+.playlist-bottom span{
+    font-size: 12px;
+    font-weight: bold;
+    color: #707070;
+
+}
+
+.border{
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #707070;
+}
+
+.border i{
+    margin-right: 6px;
+}
+
+.user svg{
+    width: 25px;
+    margin-right: 8px;
+    background-color: #707070;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.user span{
+    color: white;
+    font-weight: bold;
+}
+
+footer ul li{
+    display: inline-block;
+}
+
+.footer-left{
+    font-size: 12px;
+}
+
+.footer-left ul li{
+    vertical-align: middle;
+}
+
+.footer-left img{
+    width: 40px;
+    margin-right: 8px;
+}
+
+.footer-left h5{
+    color: white;
+}
+
+.footer-left span{
+    color: #848484; 
+}
+
+.far{
+    font-size: 16px;
+    margin-left: 8px;
+    color: #848484;
+}
+
+.fa-heart{
+    margin-left: 30px;
 }
 
 
