@@ -184,7 +184,7 @@ footer ul li{
     color: #848484; 
 }
 
-.far{
+.fa-heart, .fa-folder{
     font-size: 16px;
     margin-left: 8px;
     color: #848484;
@@ -194,4 +194,66 @@ footer ul li{
     margin-left: 30px;
 }
 
+.footer-right{
+    color: white;
+}
+
+.footer-right li{
+    padding: 0 8px;
+}
+
+.footer-right .fas{
+    font-size: 12px;
+}
+
+.progression-bar{
+    width: 60px;
+    height: 5px;
+    background-color: #848484;
+    border-radius: 20px;
+}
+
+.progression-bar-white{
+    width: 80%;
+    height: 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+.player-buttons{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.player-buttons span{
+    font-size: 16px;
+    padding: 10px;
+    color: white;
+}
+
+.fa-play-circle{
+    font-size: 24px;
+}
+
+.player-progression{
+    font-size: 12px;
+    color: white;
+}
+
+.progression-bar-2{
+    display: inline-block;
+    width: 300px;
+    height: 5px;
+    margin: 0 20px;
+    background-color: #848484;
+    border-radius: 20px;
+}
+
+.progression-bar-white-2{
+    width: 10%;
+    height: 5px;
+    background-color: white;
+    border-radius: 20px;
+}
 
