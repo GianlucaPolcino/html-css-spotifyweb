@@ -18,6 +18,7 @@ aside{
     float: left;
     height: calc(100vh - 70px);
     width: 200px;
+    overflow: hidden;
     background-color: black;
 }
 
@@ -42,10 +43,11 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-shrink: 10;
     height: 70px;
     padding: 0 10px;
     background-color: #282828;
-    }
+}
 
 ul{
     list-style: none;
@@ -98,9 +100,9 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-shrink: 5;
     padding: 10px 16px;
-    min-height: 62vh;
-    overflow: auto;
+    min-height: 70%;
     color: white;
 }
 
@@ -194,6 +196,10 @@ footer ul li{
     margin-left: 30px;
 }
 
+.footer-center{
+    width: 50%;
+}
+
 .footer-right{
     color: white;
 }
@@ -238,6 +244,7 @@ footer ul li{
 
 .player-progression{
     font-size: 12px;
+    text-align: center;
     color: white;
 }
 
@@ -255,5 +262,52 @@ footer ul li{
     height: 5px;
     background-color: white;
     border-radius: 20px;
+}
+
+.categories{
+    margin-top: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.categories li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.categories li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #848484;
+}
+
+main h2{
+    padding: 30px 20px;
+}
+
+.songs{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.song-album{
+    width: 26vw;
+    text-align: center;
+}
+
+.songs-album img{
+    width: 100%;
+}
+
+.songs-album h5{
+    padding: 10px;
+}
+
+.song-album span{
+    font-size: 12px;
+    color: #848484;
+    
 }
 
