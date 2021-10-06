@@ -283,26 +283,37 @@ footer ul li{
 }
 
 main h2{
-    padding: 30px 20px;
+    padding: 30px 14px 0 14px;
+}
+
+.other-categories{
+    margin-top: 40px;
+}
+
+main p{
+    padding: 6px 14px 20px 14px;
+    font-size: 14px;
+    color: #848484;
 }
 
 .songs{
     display: flex;
     flex-wrap: wrap;
-    padding: 10px 20px;
+    margin-left: 14px;
 }
 
 .song-album{
-    width: 26vw;
+    width: 15vw;
+    margin: 20px 14px 0 0;
     text-align: center;
 }
 
-.songs-album img{
+.song-album img{
     width: 100%;
 }
 
 .songs-album h5{
-    padding: 10px;
+    padding: 14px;
 }
 
 .song-album span{
@@ -310,4 +321,9 @@ main h2{
     color: #848484;
     
 }
+
+.artist-circle{
+    border-radius: 50%;
+}
+
 
