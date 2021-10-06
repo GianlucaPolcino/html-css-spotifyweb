@@ -53,11 +53,15 @@ ul{
     list-style: none;
 }
 
+ul li{
+    cursor: pointer;
+}
+
 .upgrade-button{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 12px;
+    padding: 12px 24px;
 }
 
 .upgrade-button button{
@@ -78,7 +82,7 @@ ul{
 }
 
 .stations{
-    padding: 10px 16px;
+    padding: 10px 0;
     font-size: 14px;
     font-weight: bold;
     color: #707070;
@@ -91,9 +95,15 @@ ul{
 
 .stations li svg{
     width: 22px;
+    margin-left: 16px;
     vertical-align: middle;
     margin-right: 8px;
     color: #707070;
+}
+
+.station-border{
+    border-left: 3px solid #84c22b;
+    color: white;
 }
 
 .playlist{
@@ -150,6 +160,7 @@ ul{
 
 .user svg{
     width: 25px;
+    height: 25px;
     margin-right: 8px;
     background-color: #707070;
     border-radius: 50%;
@@ -220,6 +231,7 @@ footer ul li{
 }
 
 .progression-bar-white{
+    position: relative;
     width: 80%;
     height: 5px;
     background-color: white;
@@ -249,6 +261,7 @@ footer ul li{
 }
 
 .progression-bar-2{
+    position: relative;
     display: inline-block;
     width: 300px;
     height: 5px;
@@ -258,10 +271,32 @@ footer ul li{
 }
 
 .progression-bar-white-2{
-    width: 10%;
+    width: 20%;
     height: 5px;
     background-color: white;
     border-radius: 20px;
+}
+
+.progression-dot{
+    position: absolute;
+    display: none;
+    top: -4px;
+    right: -4px;
+    height: 14px;
+    width: 14px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.progression-dot-2{
+    position: absolute;
+    display: none;
+    top: -4px;
+    left: 48px;
+    height: 14px;
+    width: 14px;
+    background-color: white;
+    border-radius: 50%;
 }
 
 .categories{
@@ -280,6 +315,14 @@ footer ul li{
     text-decoration: none;
     font-size: 12px;
     color: #848484;
+}
+
+.border-green{
+    margin: 8px auto;
+    height: 3px;
+    width: 40px;
+    background-color: #84c22b;
+    border-radius: 10px;
 }
 
 main h2{
@@ -325,5 +368,37 @@ main p{
 .artist-circle{
     border-radius: 50%;
 }
+
+.song-album.last{
+    margin-bottom: 60px;
+}
+
+/* Hover */
+
+.progression-bar:hover .progression-dot{
+    display: block;
+}
+
+.progression-bar-white:hover{
+    background-color: #84c22b;
+}
+
+.progression-bar-2:hover .progression-dot-2{
+    display: block;
+}
+
+.progression-bar-white-2:hover{
+    background-color: #84c22b;
+}
+
+ul li:hover{
+    color: white;
+}
+
+ul li a:hover{
+    color: white;
+}
+
+
 
 
