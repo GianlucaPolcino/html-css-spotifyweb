@@ -28,6 +28,7 @@ header{
     height: 70px;
     width: calc(100% - 200px);
     background-color: rgba(3.1, 4.3, 7.1, 0.3);
+    z-index: 999;
 }
 
 main{
@@ -71,8 +72,9 @@ ul li{
     border-radius: 20px;
     color: white;
     font-weight: bold;
-    background-color: #080b12;
+    background-color: rgba(3.1, 4.3, 7.1, 0.3);
     border: 1px solid white;
+    transition: 0.5s;
     
 }
 
@@ -236,6 +238,7 @@ footer ul li{
     height: 5px;
     background-color: white;
     border-radius: 20px;
+    transition: 0.2s;
 }
 
 
@@ -268,6 +271,7 @@ footer ul li{
     margin: 0 20px;
     background-color: #848484;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .progression-bar-white-2{
@@ -275,28 +279,31 @@ footer ul li{
     height: 5px;
     background-color: white;
     border-radius: 20px;
+    transition: 0.2s;
 }
 
 .progression-dot{
     position: absolute;
-    display: none;
+    filter: opacity(0);
     top: -4px;
     right: -4px;
     height: 14px;
     width: 14px;
     background-color: white;
     border-radius: 50%;
+    transition: 0.2s;
 }
 
 .progression-dot-2{
     position: absolute;
-    display: none;
+    filter: opacity(0);
     top: -4px;
     left: 48px;
     height: 14px;
     width: 14px;
     background-color: white;
     border-radius: 50%;
+    transition: 0.2s;
 }
 
 .categories{
@@ -346,13 +353,41 @@ main p{
 }
 
 .song-album{
+    position: relative;
     width: 15vw;
     margin: 20px 14px 0 0;
     text-align: center;
+
 }
 
 .song-album img{
     width: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.play-overlay{
+    position: absolute;
+    filter: opacity(0);
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+.play-overlay-2{
+    position: absolute;
+    filter: opacity(0);
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+
+.play-overlay i, .play-overlay-2 i{
+    font-size: 50px;
 }
 
 .songs-album h5{
@@ -376,18 +411,18 @@ main p{
 /* Hover */
 
 .progression-bar:hover .progression-dot{
-    display: block;
+    filter: opacity(1);
 }
 
-.progression-bar-white:hover{
+.progression-bar:hover .progression-bar-white{
     background-color: #84c22b;
 }
 
 .progression-bar-2:hover .progression-dot-2{
-    display: block;
+    filter: opacity(1);
 }
 
-.progression-bar-white-2:hover{
+.progression-bar-2:hover .progression-bar-white-2{
     background-color: #84c22b;
 }
 
@@ -399,6 +434,34 @@ ul li a:hover{
     color: white;
 }
 
+ul li i:hover{
+    color: white;
+}
+
+.border span:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.footer-left ul li span:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.upgrade-button button:hover{
+    text-decoration: underline;
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+.song-album:hover img{
+    filter: opacity(0.2);
+}
+
+.song-album:hover .play-overlay, .song-album:hover .play-overlay-2 {
+    filter: opacity(1);
+}
 
 
 
