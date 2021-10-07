@@ -179,6 +179,41 @@ ul li{
     font-weight: bold;
 }
 
+.phone-nav{
+    position: relative;
+    display: none;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 10px;
+    width: 40px;
+}
+
+.phone-nav div{
+    margin-bottom: 10px;
+}
+
+.phone-nav img, .phone-nav i{
+    cursor: pointer;
+}
+
+.user-phone-icon{
+    position: absolute;
+    bottom: 0;
+    left: 18%;
+    transition: 0.2s;
+}
+
+.user-phone-icon img{
+    width: 20px;
+    height: 20px;
+    background-color: #848484;
+    border-radius: 50%;
+}
+
+.user-phone-icon i{
+    color: white;
+}
+
 /* Footer */
 
 footer ul li{
@@ -538,6 +573,47 @@ ul li i:hover{
 @media screen and (max-width:768px){
     .song-album{
         width: 45%
+    }
+
+    .footer-left img{
+        margin-right: 60px;
+    }
+
+    .progression-bar{
+        width: 20px;
+    }
+}
+
+@media screen and (max-width:576px){
+    aside{
+        width: 80px;
+    }
+
+    main{
+        width: calc(100% - 80px);
+    }
+
+    header{
+        width: calc(100% - 80px);
+    }
+
+    .song-album{
+        width: 94%;
+    }
+
+    .logo, .stations, .playlist{
+        display: none;
+    }
+
+    .phone-nav{
+        display: block;
+    }
+}
+
+@media screen and (max-height: 372px){
+    
+    .user-phone-icon{
+        filter: opacity(0);
     }
 }
 
