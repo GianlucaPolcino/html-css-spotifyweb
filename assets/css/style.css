@@ -185,7 +185,7 @@ ul li{
     margin: 0 auto;
     height: 100%;
     padding-top: 10px;
-    width: 40px;
+    width: 28px;
 }
 
 .phone-nav div{
@@ -199,7 +199,7 @@ ul li{
 .user-phone-icon{
     position: absolute;
     bottom: 0;
-    left: 18%;
+    left: 8%;
     transition: 0.2s;
 }
 
@@ -599,7 +599,7 @@ ul li i:hover{
     }
 
     .song-album{
-        width: 94%;
+        width: 45%;
     }
 
     .logo, .stations, .playlist{
@@ -608,6 +608,10 @@ ul li i:hover{
 
     .phone-nav{
         display: block;
+    }
+
+    .categories li a{
+        font-size: 8px;
     }
 }
 
