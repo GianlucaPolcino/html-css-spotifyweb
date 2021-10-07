@@ -199,7 +199,6 @@ ul li{
 .user-phone-icon{
     position: absolute;
     bottom: 0;
-    left: 8%;
     transition: 0.2s;
 }
 
