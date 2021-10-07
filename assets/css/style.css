@@ -186,6 +186,7 @@ footer ul li{
 }
 
 .footer-left{
+    max-width: 22%;
     font-size: 12px;
 }
 
@@ -221,6 +222,7 @@ footer ul li{
 }
 
 .footer-right{
+    max-width: 19%;
     color: white;
 }
 
@@ -241,7 +243,7 @@ footer ul li{
 
 .progression-bar-white{
     position: relative;
-    width: 80%;
+    width: 60%;
     height: 5px;
     background-color: white;
     border-radius: 20px;
@@ -250,6 +252,9 @@ footer ul li{
 
 
 .player-buttons{
+    margin: 0 auto;
+    width: 300px;
+    height: 20px;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -257,12 +262,17 @@ footer ul li{
 .player-buttons span{
     font-size: 16px;
     padding: 10px;
+    vertical-align: middle;
     color: white;
+}
+
+.player-buttons span i{
+    transition: 0.2s;
 }
 
 .fa-play-circle{
     font-size: 22px;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .player-progression{
@@ -274,7 +284,7 @@ footer ul li{
 .progression-bar-2{
     position: relative;
     display: inline-block;
-    width: 300px;
+    width: 50%;
     height: 5px;
     margin: 0 20px;
     background-color: #848484;
@@ -306,7 +316,7 @@ footer ul li{
     position: absolute;
     filter: opacity(0);
     top: -4px;
-    left: 48px;
+    left: 18%;
     height: 14px;
     width: 14px;
     background-color: white;
@@ -369,7 +379,7 @@ main p{
 
 .song-album{
     position: relative;
-    width: calc(100% / 6);
+    width: 15%;
     margin: 20px 14px 0 0;
     text-align: center;
 
@@ -468,10 +478,6 @@ ul li i:hover{
 
 .upgrade-button button:hover{
     font-size: 14px;
-    /* text-decoration: underline; */
-    /* background-color: white;
-    border-color: black;
-    color: black; */
 }
 
 .song-album:hover img{
@@ -482,10 +488,60 @@ ul li i:hover{
     filter: opacity(1);
 }
 
-.player-buttons .fa-play-circle:hover{
+.player-buttons span i:hover{
     font-size: 26px;
     cursor: pointer;
 }
+
+.player-buttons span .fa-play-circle:hover{
+    color: #84c22b;
+}
+
+/* Media query */
+
+@media screen and (max-width:1080px){
+    .song-album{
+        width: 20%;
+    }
+}
+
+
+
+@media screen and (max-width:992px){
+    .song-album{
+        width: 24%;
+    }
+
+    .footer-left img{
+        width: 28px;
+    }
+
+    .fa-folder{
+        display: block;
+        margin-left: 30px;
+        margin-top: 4px;
+    }
+
+    .likes{
+        margin-left: -20px;
+    }
+
+    .progression-bar{
+        width: 40px;
+    }
+
+    .footer-right li{
+        padding: 0 3px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .song-album{
+        width: 45%
+    }
+}
+
+
 
 
 
