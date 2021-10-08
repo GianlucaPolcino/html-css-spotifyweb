@@ -118,7 +118,7 @@ ul li{
     justify-content: space-between;
     flex-shrink: 5;
     padding: 10px 16px;
-    min-height: 70%;
+    min-height: calc(100% - 180px);
     color: white;
 }
 
@@ -620,6 +620,7 @@ ul li i:hover{
         filter: opacity(0);
     }
 }
+
 
 
 
